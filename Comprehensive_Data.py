@@ -6,9 +6,7 @@ x = pd.read_csv('D:\My\Project\international-migration-December-2022.csv')
 x.rename(columns={'country_of_residence':'From','standard_error':'P_Error','year_month':'Year'},inplace=True)
 x["estimate"].fillna(0 , inplace=True)
 
-
 class Data_Migration:
-
 
     def Migratory_Each_Contry():
 
@@ -100,7 +98,6 @@ class Data_Migration:
         plt.legend(title='____info____')   
                                                                                             
         plt.show()
-
 
 Data_Migration.Migratory_Each_Contry()
 Data_Migration.Migration_Types()
